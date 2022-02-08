@@ -1,0 +1,38 @@
+[
+    {
+        "model": "levelupapi.event",
+        "pk": 1,
+        "fields": {
+            "game": 1,
+            "description": "Sorry! is a board game that is based on the ancient Indian cross and circle game Pachisi.",
+            "date": "2022-02-01",
+            "time": "12:00",
+            "organizer": 1,
+            "attendees": [1]
+        }
+    },
+    {
+        "model": "levelupapi.event",
+        "pk": 2,
+        "fields": {
+            "game": 2,
+            "description": "Drawing on over forty years of history, Dungeons & Dragons lets you create mighty heroes to battle monsters, solve puzzles, and reap rewards.",
+            "date": "2022-02-10",
+            "time": "9:00",
+            "organizer": 1,
+            "attendees": [1]
+        }
+    },
+    {
+        "model": "levelupapi.event",
+        "pk": 3,
+        "fields": {
+            "game": 3,
+            "description": "The player creates virtual people called Sims, places them in houses, and helps direct their moods and satisfy their desires.",
+            "date": "2022-03-01",
+            "time": "10:00",
+            "organizer": 1,
+            "attendees": [1]
+        }
+    }
+]
