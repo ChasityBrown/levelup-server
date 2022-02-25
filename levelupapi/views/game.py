@@ -3,12 +3,15 @@ from django.http import HttpResponseServerError
 from django.core.exceptions import ValidationError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
+from rest_framework.permissions import DjangoModelPermissions
 from rest_framework import serializers, status
 from levelupapi.models import Game, Gamer, GameType
 
 
 class GameView(ViewSet):
     """Level up game view"""
+    permission_classes = [ DjangoModelPermissions ]
+    queryset = Game.objects.none()
 
     def retrieve(self, request, pk):
         """Handle GET requests for single game 

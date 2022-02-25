@@ -83,7 +83,7 @@ class EventView(ViewSet):
     
         gamer = Gamer.objects.get(user=request.auth.user)
         event = Event.objects.get(pk=pk)
-        event.attendees.add(gamer)
+        event.attendees.add(gamer) #Adds row to event_gamer join table when gamer joins event
         return Response({'message': 'Gamer added'}, status=status.HTTP_201_CREATED)
     
     @action(methods=['delete'], detail=True)
